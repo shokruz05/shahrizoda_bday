@@ -6,6 +6,7 @@
 <meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport' />
 <meta content='IE=edge' http-equiv='X-UA-Compatible' />
 
+<!-- Libraries: SweetAlert, TypeIt, and newly added Canvas Confetti for explosion effect -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
 <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
@@ -205,23 +206,28 @@ body {
 
 <body>
 
+  <!-- Background Layer -->
   <div id="background-wrap">
-    <img src="./assets/wp2.jpeg" id="wallpaper" />
+    <img src="./wp2.jpeg" id="wallpaper" />
     <div class="overlay"></div>
   </div>
 
+  <!-- Custom Branding by Rahul -->
   <div class="rahul-branding">
-    <b>made with ❤️ by <span>@kvonyeon</span></b>
+    <b>made with ❤️ by <span>@just.rahul.dev</span></b>
   </div>
 
   <audio src="" id="linkmp3" class="sembunyi"></audio>
 
+  <!-- Modern Glass Card Container -->
   <div class="glass-card" id="Content">
 
+    <!-- Intro Sticker -->
     <div id="ftAwal">
-      <img src="./assets/pandaputih.gif" id="ftoAwal" />
+      <img src="./pandaputih.gif" id="ftoAwal" />
     </div>
 
+    <!-- Heart Button -->
     <div id="loveIn">
       <div class="love-btn">
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>
@@ -229,24 +235,27 @@ body {
         </svg>
       </div>
     </div>
-    <p id="ket"> нажми чтобы продолжить👆!</p>
+    <p id="ket">Нажми на сердечко!</p>
 
+    <!-- Hidden Stickers for later use -->
     <div class="kumpulanstiker">
-      <img src="./assets/cilukba.gif" id="fotostiker" />
-      <img src="./assets/pandapanah.gif" id="fotostiker1" />
-      <img src="./assets/pandaputih.gif" id="fotostikerPopup" />
-      <img src="./assets/weee.gif" id="fotostikerPopupCon" />
-      <img src="./assets/ngumpet.gif" id="fotostikerPopupCan" />
+      <img src="./cilukba.gif" id="fotostiker" />
+      <img src="./pandapanah.gif" id="fotostiker1" />
+      <img src="./pandaputih.gif" id="fotostikerPopup" />
+      <img src="./weee.gif" id="fotostikerPopupCon" />
+      <img src="./ngumpet.gif" id="fotostikerPopupCan" />
     </div>
 
+    <!-- Swipeable Messages -->
     <div id='pergeseran'>
-      <p><b><img src="./assets/pusn.gif" /><span>Привет, ты тут? 🤭❤️</span></b></p>
-      <p><b><img src="./assets/mikir.gif" /><span>Я просто хочу кое-что<br>тебе сказать... 😆</span></b></p>
-      <p><b><img src="./assets/cilukba.gif" /><span>Опа, у тебя же сегодня день рождения! 😜</span></b></p>
-      <p><b><img src="./assets/g5.gif" /><span class="ft">С Днём Рождения! 🥳</span></b></p>
-      <p><b><img src="./assets/mndkat.gif" /><span>Желаю долгих лет жизни<br />и самого крепкого здоровья 🥰</span></b></p>
+      <p><b><img src="./pusn.gif" /><span>Привет, ты тут? 🤭❤️</span></b></p>
+      <p><b><img src="./mikir.gif" /><span>Я просто хочу кое-что<br>тебе сказать... 😆</span></b></p>
+      <p><b><img src="./cilukba.gif" /><span>Опа, у тебя же сегодня день рождения! 😜</span></b></p>
+      <p><b><img src="./g5.gif" /><span class="ft">С Днём Рождения! 🥳</span></b></p>
+      <p><b><img src="./mndkat.gif" /><span>Желаю долгих лет жизни<br />и самого крепкого здоровья 🥰</span></b></p>
     </div>
 
+    <!-- Final Message Container -->
     <blockquote id='bq'>
       <p id="teksnim">С новым уровнем! 🥳</p>
       <p id="kalimat">
@@ -258,6 +267,7 @@ body {
       </p>
     </blockquote>
 
+    <!-- Swipe Button -->
     <div id="Tombol">
       <a onClick="multifungsi()" id="tmbl">Листай дальше &#128073;</a>
     </div>
